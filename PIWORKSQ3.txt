@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+// To execute C, please define "int main()"
+
+int main() {
+  int a=5,b=3;
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  printf("a equals %d, b equals %d",a,b);
+  return 0;
+}
