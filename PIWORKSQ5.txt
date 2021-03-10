@@ -1,0 +1,1 @@
+SELECT users.username, users.emailaddress FROM (SELECT USERID, COUNT(USERID) logs FROM I_USER_LOGIN_LOGS GROUP BY USERID) logins, i_users users where logins.userid=users.userid and logins.logs=MAX(logins.logs);
